@@ -169,6 +169,19 @@ atom-text-editor {
       color: @purple;
       font-style: italic;
     }
+
+    &.syntax--bracket.syntax--curly.syntax--php {
+        color: @white;
+    }
+
+    &.syntax--bracket.syntax--round.syntax--php {
+        color: @lighter-cyan;
+    }
+
+  }
+
+  &.syntax--section.syntax--array.syntax--php {
+      color: @white;
   }
 
   &.syntax--section.syntax--embedded {
@@ -179,7 +192,7 @@ atom-text-editor {
 
 .syntax--support {
   &.syntax--class {
-    color: @light-orange;
+    color: @yellow;
   }
 
   &.syntax--function  {
@@ -197,15 +210,15 @@ atom-text-editor {
   }
   &.syntax--name.syntax--type {
     color: @light-orange;
-    text-decoration: underline;
   }
 
   &.syntax--other.syntax--inherited-class {
     color: @green;
   }
   &.syntax--name.syntax--class, &.syntax--name.syntax--type.syntax--class {
-    color: @light-orange;
+    color: @red;
   }
+
 
   &.syntax--name.syntax--section {
     color: @blue;
