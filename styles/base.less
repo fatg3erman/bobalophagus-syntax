@@ -122,7 +122,6 @@ atom-text-editor {
 .syntax--string {
   color: @green;
 
-
   &.syntax--regexp {
     color: @cyan;
 
@@ -134,6 +133,12 @@ atom-text-editor {
   &.syntax--other.syntax--link {
     color: @red;
   }
+
+  .syntax--invalid.syntax--illegal {
+      background-color: #882300;
+      color: @green;
+  }
+
 }
 
 .syntax--punctuation {
